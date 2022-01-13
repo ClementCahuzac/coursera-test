@@ -1,0 +1,868 @@
+
+body{
+  font-family: 'Oxygen', sans-serif;
+  color:#0B392A;
+}
+
+
+a {
+  color: #0B392A;
+}
+
+
+
+header{
+  background: rgb(157,191,137);
+  background: linear-gradient(90deg, rgba(157,191,137,1) 9%, rgba(119,161,94,1) 70%, rgba(87,132,61,1) 100%);
+
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+nav{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.navbar-default{
+  background-color: #9dbf8900;
+  border:none;
+}
+
+.navbar{
+  margin:0;
+}
+
+.zoneLogo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+  text-transform: uppercase;
+
+}
+
+.logo{
+  padding-right:10px;
+  width: 130px;
+}
+
+h1{
+  color:#0B392A;
+  font-family: 'Lora', serif;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #222;
+  text-transform: uppercase;
+  margin:0;
+
+}
+
+a:link{
+  text-decoration: none;
+}
+
+#nav-list{
+  position: absolute;
+  right: 0;
+}
+
+
+#nav-list a{
+  text-align: center;
+  color: #0B392A;
+  margin-top: 30px;
+  font-size:16px;
+  padding: 15px 18px 15px 18px;
+}
+
+#nav-list a:hover{
+  text-align: center;
+  color: #022419;
+  text-shadow: 0.5px 0.5px 0 #022419;
+  font-weight: bold;
+}
+
+#nav-list a span{
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+
+#phone a{
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-top:30px;
+}
+
+#phone a:hover{
+  background:none;
+  height: auto;
+}
+
+
+#phone div{
+  text-align: right;
+
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+  border: 2px solid #0B392A;
+}
+
+
+/* main content */
+
+#main-content
+{
+  margin:0;
+  padding:0;
+  width: 100%;
+}
+
+.container .jumbotron, .container-fluid .jumbotron{
+  width: 100%;
+  border-radius: 0;
+  padding:0;
+  background-color: #222;
+}
+
+
+
+
+h2{
+  background: linear-gradient(to right, #8B4051 10%, #31020D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight:900;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+
+.container-full-bg .jumbotron{
+  margin:0;
+}
+
+
+
+/*  Tiles */
+
+.row{
+  margin:0;
+}
+
+#menu-tile, #specials-tile{
+  height: 500px; 
+  width: 500px;
+  position: relative;
+  margin-bottom:10px;
+  overflow: hidden;
+  flex:1;
+}
+
+.livraison2 {
+  margin-top:50px;
+}
+
+#map-tile{
+  width: 100%;
+  height: 300px;
+}
+
+
+
+
+.col-lg-12{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  height: 500px;
+  padding:0;
+}
+
+.col-lg-12 a{
+  width: 100%;
+  flex:1;
+}
+
+.textTile{
+  padding:50px 200px 0px 200px;
+  text-align: justify;
+  position:relative;
+  flex:2;
+  box-sizing:content-box;
+}
+
+#menu-tile:hover, #specials-tile:hover{
+  -webkit-box-shadow: 5px 5px 5px 3px rgba(50,3,13,0.89); 
+  box-shadow: 0px 5px 5px  rgba(50,3,13,0.89);
+}
+
+
+#menu-tile span, #specials-tile span, #map-tile span{
+
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    text-align:center;
+    background-color: rgba(34, 34, 34, 0.5);
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow:rgb(0, 0, 0) 2px 1px;
+    
+}
+
+
+
+#menu-tile{
+  background: url('/images/menu-tile.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+#specials-tile{
+  background: url('/images/specials-tile.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.btnMenu{
+  background-color: white;
+  color:#4F0F1E;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: bold;
+  position: absolute;
+  left:40%;
+  border-radius: 25px;
+  padding:.75rem 1.75rem;
+  border-color: #4F0F1E;
+  border:2px solid;
+  margin-top:30px;
+}
+
+
+.btnMenu:hover{
+  background: linear-gradient(90deg, rgba(49, 2, 13,1) 9%, rgba(110, 35, 52,1) 70%, rgba(139, 64, 81,1) 100%);
+  color:white;
+  
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+
+
+#livraison{
+  background: linear-gradient(90deg, rgba(49, 2, 13,1) 9%, rgba(110, 35, 52,1) 70%, rgba(139, 64, 81,1) 100%);
+  color:white;
+  font-size: 1.5em;
+  height:100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#livraison p{
+  margin:0;
+}
+
+#btnLivraison{
+  margin-left:50px;
+  background-color: transparent;
+
+  text-transform: uppercase;
+  font-size: 1.2em;
+  border-radius: 25px;
+  padding:.75rem 1.75rem;
+  border:1.5px solid;
+
+}
+
+#btnLivraison:hover{
+  background-color: white;
+  color: #31020D;
+  font-weight: bold;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+
+
+
+
+/**** Footer ***/
+  
+.panel-footer {
+  font-weight: 600;
+  color: #0B392A;
+  background: rgb(157,191,137);
+  background: linear-gradient(90deg, rgba(157,191,137,1) 9%, rgba(119,161,94,1) 70%, rgba(87,132,61,1) 100%);
+  border:none;
+}
+
+
+
+.panel-footer div.row{
+  margin-bottom: 20px;
+  padding-top:15px;
+  
+}
+
+#hours, #address{
+  line-height: 1.5;
+}
+
+
+#hours > span, #address > span{
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 2;
+}
+
+#address p{
+  font-size: 0.9em;
+  color: rgb(44, 44, 44);
+  padding-top:5px;
+}
+
+
+
+
+.border-color{
+    width:120px;
+    border-top:1px solid #022419;
+    height:1px;  
+    padding-bottom:15px; 
+    padding-left:100px;
+    margin-left:25px;
+    }
+
+
+
+
+/* Menu category page*/ 
+
+
+
+.menu-item-tile{
+  margin-bottom:25px;
+}
+
+.menu-item-tile hr{
+  width: 80%;
+}
+
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+
+
+
+
+.menu-item-tile .menu-item-price span{
+  font-size: .6em;
+}
+
+.menu-item-photo{
+  position: relative;
+  overflow:hidden;
+  padding:0;
+  margin-right:-15px;
+  margin-left: auto;
+  margin-bottom:20px;
+  max-width: 250px;
+}
+
+
+
+
+.menu-item-photo div{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: rgb(157,191,137);
+  text-align: center;
+  color:#022419;
+  font-size: 1.2em;
+}
+
+.menu-item-description{
+  padding-right: 30px;
+}
+
+
+h3{
+  margin-top:0;
+}
+
+.menu-item-details {
+  font-size: .9em;
+}
+
+
+
+
+
+
+
+
+/*   menu */
+
+
+.category-tile{
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 40px;
+}
+
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, rgba(49, 2, 13,1) 9%, rgba(110, 35, 52,1) 70%, rgba(139, 64, 81,1) 100%);
+  color: #fff;
+  opacity: 0.8;
+}
+
+
+.category-tile:hover{
+  box-shadow: 0 5px 15px 2px rgba(49, 2, 13, 0.521)
+
+
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+
+.text-center{
+  width: 90%;
+  margin: auto;
+  padding-top:15px;
+}
+
+
+
+
+
+
+
+.menu-item-tile {
+  padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+/**** media queries *****/
+
+@media (min-width: 1200px){
+  .jumbotron {
+    background: url('/images/jumbotron_1200.jpg') no-repeat;
+    background-size: cover;
+    height: 675px;
+  
+  }
+
+
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+  header{
+    height: 250px;
+  }
+
+  #nav-list{
+    position: relative;
+  }
+
+  .jumbotron {
+    background: url('/images/jumbotron_992.jpg') no-repeat;
+    background-size: cover;
+
+    height: 558px;
+  
+  }
+
+  .textTile{
+    padding : 50px 80px 0px 80px;
+  }
+
+ 
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  h1{
+    font-size: 3vw;
+  }
+
+  #nav-list a span{
+    font-size: 1.2em;
+  }
+
+  #nav-list{
+    position: relative;
+  }
+
+  .zoneLogo{
+    font-size: 1.5vw;
+  }
+
+
+  .jumbotron {
+    background: url('/images/jumbotron_768.jpg') no-repeat;
+    background-size: cover;
+    height: 432px;
+  }
+
+
+
+  .textTile{
+    padding : 15px 30px 0px 30px;
+  }
+
+  #menu-tile, #specials-tile{
+    height: 350px;
+    width: 350px;
+  }
+
+  .col-sm-12 {
+    height: 350px;
+  }
+  
+  .btnMenu {
+    margin-top:0;
+  }
+
+  .textTile h2 {
+    margin-top: 0;
+  }
+
+  #map-tile iframe{
+    width: 100%;
+    height: 350px;
+  }
+
+  #hours, #address, #testimonials {
+    height: auto;
+    text-align: center;
+    font-size: 12px;
+
+  }
+  
+}
+
+
+
+@media (max-width: 767px){
+ 
+  .jumbotron {
+    padding: 0;
+  }
+  .container {
+    padding: 0;
+  }
+
+
+
+  .zoneTitre{
+    padding-right: 50px;
+  
+  }
+ 
+  h1{
+    font-size: 3vw;
+  }
+
+  .zoneLogo{
+    font-size: 1.5vw;
+  }
+
+  #nav-list a span{
+    font-size: 1em;
+  }
+
+  
+  #header-nav
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+  }
+
+  .nav>li>a{
+      padding:0;
+    }
+
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+      border:none;
+    }
+
+   
+    .container .jumbotron, .container-fluid .jumbotron{
+      padding:0;
+    }
+  
+
+    #call-btn > a, #xs-deliver {
+      display: block;
+      background-color: #0B392A;
+      color: aliceblue;
+      border:0;
+      border-radius: 0%;
+      padding:3px;
+      font-size: 1.5em;
+      
+    }
+
+    #xs-deliver{
+      font-size: 1em;
+    }
+
+
+    #menu-tile, #specials-tile{
+      width: 360px;
+      margin: 0 auto 15px;
+    }
+
+
+    .panel-footer section{
+      text-align: center;
+    }
+
+    .panel-footer section hr{
+      width: 70%;
+      border-color: #022419;
+    }
+
+    .border-color{
+      display: none;
+    }
+
+
+    .menu-item-photo{
+      margin-right:auto;
+    }
+
+    .menu-item-tile .menu-item-price{
+      text-align: center;
+    }
+
+
+    .menu-item-description{
+      text-align: center;
+
+    }
+
+
+
+    .textTile{
+      padding : 10px 20px 0px 20px;
+    }
+  
+    #menu-tile, #specials-tile{
+      height: 200px;
+      width: 200px;
+    }
+  
+    .col-sm-12 {
+      height: 250px;
+    }
+    
+    .btnMenu {
+      margin-top:0;
+      font-size: 1em;
+      border: 1px solid;
+    }
+  
+    #btnLivraison {
+      font-size: 0.8em;
+
+    }
+
+    .textTile h2 {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+  
+    p {
+      font-size: 12px;
+    }
+
+    #map-tile iframe{
+      width: 100%;
+      height: 350px;
+    }
+
+
+    #hours, #address, #testimonials {
+      height: auto;
+      font-size: 10px;
+    }
+
+    #testimonials p {
+      font-size: 10px;
+    }
+
+    .text-center {
+      font-size: 10px;
+    }
+
+    
+
+    #map-tile {
+      height: 250px;
+    }
+
+    #map-tile iframe{
+      width: 100%;
+      height: 250px;
+    }
+
+    .panel-footer {
+      padding: 0;
+    }
+    .text-center {
+      width: 100%;
+    }
+
+
+    #nav-list {
+      position:absolute;
+      top:42px;
+      background-color: rgb(194, 194, 194);
+      width: 150px;
+    }
+    #nav-list a {
+      margin-top:5px;
+      padding:10px 10px;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 479px) {
+
+    .col-xxs-12 {
+      position:relative;
+      min-height:1px;
+      padding-right:15px;
+      padding-left:15px;
+      float:left;
+      width:100%;
+      
+    }
+
+    .col-lg-12 {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .col-lg-12{
+      margin-bottom:30px;
+    }
+
+
+    .textTile{
+      padding : 10px 20px 0px 20px;
+    }
+  
+    #menu-tile, #specials-tile{
+      height: 200px;
+      width: 200px;
+    }
+  
+  
+    
+    .btnMenu {
+      margin-top:0;
+      font-size: 1em;
+      border: 1px solid;
+    }
+  
+    #btnLivraison {
+      font-size: 0.8em;
+
+    }
+
+    #livraison {
+      margin:0px;
+    }
+
+    .textTile h2 {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+  
+    p {
+      font-size: 12px;
+    }
+
+    .col-lg-12 a {
+      height: 200px;
+    }
+
+    #map-tile iframe {
+      height: 260px;
+    }
+    .panel-footer div.row {
+      margin-bottom: 0;
+    }
+    .text-center {
+      margin-bottom: 10px;
+      padding-top: 5px;
+    }
+    #xs-deliver {
+      margin: 0;
+    }
+    .text-center {
+      width: 100%;
+    }
+    #testimonials p {
+      font-size: 10px;
+    }
+    #mapTile {
+      margin: 0;
+    }
+  }
+
+
+
+
+
+
+
